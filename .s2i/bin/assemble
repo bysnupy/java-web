@@ -8,8 +8,6 @@ fi
 . $(dirname $0)/common.sh
 source /usr/local/s2i/scl-enable-maven
 
-curl -I --max-time 1 --connect-timeout 1 http://ttt-tmp1.router.default.svc.cluster.local
-
 LOCAL_SOURCE_DIR=/tmp/src
 
 # Resulting WAR files will be deployed to /opt/eap/standalone/deployments
